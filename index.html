@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="estilo.css">
+
+    <title>Quilmes, Buenos Aires — Mi Ciudad Natal</title>
+</head>
+
+<body>
+    <div class="envoltura">
+        <!-- Botón de menú hamburguesa (solo visible en móvil) -->
+        <button class="boton_menu" id="botonMenu" aria-label="Abrir menú">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Overlay para cerrar el menú al tocar fuera -->
+        <div class="overlay" id="overlay"></div>
+
+        <!-- Barra Lateral de Navegación -->
+        <nav class="barra_lateral" id="barraLateral">
+            <div class="encabezado_barra">
+                <h2><i class="fas fa-city"></i> Quilmes</h2>
+                <p class="text-muted">Buenos Aires, Argentina</p>
+            </div>
+
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link activo" href="index.html">
+                        <i class="fas fa-home"></i> Inicio
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="patrimonio.html">
+                        <i class="fas fa-landmark"></i> Patrimonio & Cultura
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="naturaleza.html">
+                        <i class="fas fa-tree"></i> Naturaleza & Espacios Verdes
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gastronomia.html">
+                        <i class="fas fa-utensils"></i> Gastronomía
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="nocturna.html">
+                        <i class="fas fa-moon"></i> Vida Nocturna
+                    </a>
+                </li>
+            </ul>
+
+            <div class="pie_barra">
+                <p><i class="fas fa-heart"></i> Hecho con amor para Quilmes</p>
+            </div>
+        </nav>
+
+        <!-- Contenido Principal -->
+        <main class="contenido_principal">
+            <!-- Sección Hero -->
+            <section class="seccion_hero">
+                <div class="capa_superpuesta"></div>
+                <div class="contenido_hero">
+                    <h1 class="display-3">Quilmes</h1>
+                    <p class="lead">Mi ciudad natal, mi orgullo</p>
+                    <a href="#conoce" class="btn btn-light btn-lg mt-3">Descubrí Quilmes</a>
+                </div>
+            </section>
+
+            <!-- Sección de Info -->
+            <section id="conoce" class="seccion_info py-5">
+                <div class="container-fluid px-5">
+                    <div class="row">
+                        <div class="col-lg-6 mb-4">
+                            <h2 class="titulo_seccion">Sobre Quilmes</h2>
+                            <p class="lead texto_justificado">
+                                Quilmes es una ciudad con más de <strong>350 años de historia</strong>, ubicada en el
+                                Gran Buenos Aires, a orillas del Río de la Plata. Fundada originalmente por los
+                                indígenas Quilmes que fueron trasladados desde los Valles Calchaquíes de Tucumán, la
+                                ciudad creció hasta convertirse en un importante centro industrial y cultural de la zona
+                                sur del conurbano bonaerense.
+                            </p>
+                            <p>
+                                Es conocida mundialmente por ser el hogar de la <strong>Cervecería y Maltería
+                                    Quilmes</strong>, fundada en 1890 por Otto Bemberg, que se convirtió en un símbolo
+                                nacional de la industria argentina. La ciudad combina un rico patrimonio histórico con
+                                espacios verdes, una vibrante escena gastronómica y una identidad única marcada por su
+                                gente trabajadora y su tradición cervecera.
+                            </p>
+                            <div class="estadisticas mt-4">
+                                <div class="row text-center">
+                                    <div class="col-4">
+                                        <h3>580K+</h3>
+                                        <p>Habitantes</p>
+                                    </div>
+                                    <div class="col-4">
+                                        <h3>1890</h3>
+                                        <p>Fundación Cervecería</p>
+                                    </div>
+                                    <div class="col-4">
+                                        <h3>17 km</h3>
+                                        <p>de la Capital</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="contenedor_mapa">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52453.123456789!2d-58.3147!3d-34.7244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32d55db9f5e6f%3A0x5c5c5c5c5c5c5c5c!2sQuilmes%2C%20Buenos%20Aires%20Province%2C%20Argentina!5e0!3m2!1sen!2sus!4v1699999999999!5m2!1sen!2sus"
+                                    width="100%" height="450" style="border:0; border-radius: 15px;" allowfullscreen=""
+                                    loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Vista previa de Categorías -->
+            <section class="categories-preview py-5 bg-light">
+                <div class="container-fluid px-5">
+                    <h2 class="titulo_seccion text-center mb-5">Explorá Quilmes por categorías</h2>
+                    <div class="row g-4">
+                        <div class="col-md-3">
+                            <a href="patrimonio.html" class="tarjeta_categoria">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body text-center py-4">
+                                        <i class="fas fa-landmark fa-3x text-primary mb-3"></i>
+                                        <h5>Patrimonio & Cultura</h5>
+                                            <p class="text-muted small">Cervecería, Museos, Iglesias y Bibliotecas</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="naturaleza.html" class="tarjeta_categoria">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body text-center py-4">
+                                        <i class="fas fa-tree fa-3x text-success mb-3"></i>
+                                        <h5>Naturaleza & Espacios Verdes</h5>
+                                            <p class="text-muted small">La Ribera, Plazas y Parques</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="gastronomia.html" class="tarjeta_categoria">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body text-center py-4">
+                                        <i class="fas fa-utensils fa-3x text-warning mb-3"></i>
+                                        <h5>Gastronomía</h5>
+                                            <p class="text-muted small">Top 5 de los mejores restaurantes</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="nocturna.html" class="tarjeta_categoria">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body text-center py-4">
+                                        <i class="fas fa-moon fa-3x text-dark mb-3"></i>
+                                        <h5>Vida Nocturna</h5>
+                                            <p class="text-muted small">Top 5 de las mejores salidas</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección de Video -->
+            <section class="seccion_video py-5">
+                <div class="container-fluid px-5 text-center">
+                    <h2 class="titulo_seccion mb-4">Quilmes en Movimiento</h2>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="ratio ratio-16x9 shadow-lg rounded-4 overflow-hidden">
+                                
+                                <iframe src="https://www.youtube.com/embed/tXHFf7adKE0" title="Quilmes - Mi Ciudad"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Pie de Página -->
+            <footer class="pie_pagina py-4 bg-dark text-white text-center">
+                <div class="container">
+                    <p class="mb-0"> 2026 Quilmes, Buenos Aires — Mi Ciudad Natal. Todos los derechos reservados.</p>
+                </div>
+            </footer>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // Menú hamburguesa
+        const botonMenu = document.getElementById('botonMenu');
+        const barraLateral = document.getElementById('barraLateral');
+        const overlay = document.getElementById('overlay');
+
+        function abrirMenu() {
+            barraLateral.classList.add('mostrada');
+            overlay.classList.add('activo');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function cerrarMenu() {
+            barraLateral.classList.remove('mostrada');
+            overlay.classList.remove('activo');
+            document.body.style.overflow = '';
+        }
+
+        botonMenu.addEventListener('click', function() {
+            if (barraLateral.classList.contains('mostrada')) {
+                cerrarMenu();
+            } else {
+                abrirMenu();
+            }
+        });
+
+        overlay.addEventListener('click', cerrarMenu);
+
+        // Cerrar menú al hacer clic en un enlace (en móvil)
+        document.querySelectorAll('.barra_lateral .nav-link').forEach(function(enlace) {
+            enlace.addEventListener('click', function() {
+                if (window.innerWidth <= 991) {
+                    cerrarMenu();
+                }
+            });
+        });
+
+        // Cerrar menú con la tecla Escape
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && barraLateral.classList.contains('mostrada')) {
+                cerrarMenu();
+            }
+        });
+    </script>
+
+</body>
+
+</html>

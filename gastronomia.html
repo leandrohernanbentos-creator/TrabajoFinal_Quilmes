@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="estilo.css">
+
+    <title>Gastronomía</title>
+</head>
+
+<body>
+    <div class="envoltura">
+        <!-- Botón de menú hamburguesa (solo visible en móvil) -->
+        <button class="boton_menu" id="botonMenu" aria-label="Abrir menú">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Overlay para cerrar el menú al tocar fuera -->
+        <div class="overlay" id="overlay"></div>
+
+        <nav class="barra_lateral" id="barraLateral">
+            <div class="encabezado_barra">
+                <h2><i class="fas fa-city"></i> Quilmes</h2>
+                <p class="text-muted">Buenos Aires, Argentina</p>
+            </div>
+            <ul class="nav flex-column">
+                <li class="nav-item"><a class="nav-link " href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="patrimonio.html"><i class="fas fa-landmark"></i>
+                        Patrimonio & Cultura</a></li>
+                <li class="nav-item"><a class="nav-link" href="naturaleza.html"><i class="fas fa-tree"></i> Naturaleza &
+                        Espacios Verdes</a></li>
+                <li class="nav-item"><a class="nav-link activo" href="gastronomia.html"><i class="fas fa-utensils"></i>
+                        Gastronomía</a></li>
+                <li class="nav-item"><a class="nav-link" href="nocturna.html"><i class="fas fa-moon"></i> Vida
+                        Nocturna</a></li>
+            </ul>
+            <div class="pie_barra">
+                <p><i class="fas fa-heart"></i> Hecho con amor para Quilmes</p>
+            </div>
+        </nav>
+
+        <main class="contenido_principal">
+            <div class="encabezado_pagina py-5 bg-warning text-dark">
+                <div class="container-fluid px-5">
+                    <h1 class="display-4"><i class="fas fa-utensils"></i> Gastronomía</h1>
+                    <p class="lead">Top 5 de los mejores restaurantes de Quilmes</p>
+                </div>
+            </div>
+
+            <div class="container-fluid px-5 py-5">
+                <div class="row g-4">
+                    <!-- Top 1 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card tarjeta_restaurante h-100 border-0 shadow-lg">
+                            <div class="position-relative">
+                                <img src="img/restaurante comer quilmes.webp" class="card-img-top" alt="Restaurante"
+                                    style="height: 250px; object-fit: cover;">
+                                <div class="position-absolute top-0 start-0 m-3">
+                                    <span class="badge bg-danger fs-5"><i class="fas fa-crown"></i> #1</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">Restaurante Comer Quilmes</h4>
+                                <p class="text-muted">
+                                    <a href="https://www.google.com/maps/search/?api=1&query=Restaurante+Comer+Quilmes,+Aristóbulo+del+Valle+1490,+Quilmes,+Argentina"
+                                        target="_blank" rel="noopener noreferrer"
+                                        class="text-decoration-none text-muted">
+                                        <i class="fas fa-map-marker-alt"></i> Aristóbulo del Valle 1490, Quilmes
+                                    </a>
+                                </p>
+                                <div class="mb-2">
+                                    <span class="badge bg-primary">Parrila</span>
+                                    <span class="badge bg-secondary">Gourmet</span>
+                                </div>
+                                <p class="card-text">El Restaurante Comer Quilmes (conocido
+                                    popularmente como "Buen Comer") es un histórico tenedor libre - self service ubicado
+                                    en la zona sur del Gran Buenos Aires. Se destaca por su enorme variedad de platos y
+                                    por ofrecer opciones de buffet libre que incluyen parrilla, pastas, sushi y
+                                    mariscos.</p>
+                                <div class="valoracion text-warning">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Top 2 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card tarjeta_restaurante h-100 border-0 shadow-lg">
+                            <div class="position-relative">
+                                <img src="img/bodegon portada.jfif" class="card-img-top" alt="Restaurante"
+                                    style="height: 250px; object-fit: cover;">
+                                <div class="position-absolute top-0 start-0 m-3">
+                                    <span class="badge bg-warning text-dark fs-5"><i class="fas fa-medal"></i> #2</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">Bodegón Quilmes</h4>
+                                <p class="text-muted">
+                                    <a href="https://www.google.com/maps/search/?api=1&query=Bodegón+Quilmes,+Guido+y+Gral.+Paz,+Quilmes,+Argentina"
+                                        target="_blank" rel="noopener noreferrer"
+                                        class="text-decoration-none text-muted">
+                                        <i class="fas fa-map-marker-alt"></i> Guido, Gral. Paz &, Quilmes
+                                    </a>
+                                </p>
+                                <div class="mb-2">
+                                    <span class="badge bg-success">Parrilla</span>
+                                    <span class="badge bg-secondary">Pastas</span>
+                                </div>
+                                <p class="card-text">Este popular restaurante abrió en la sede del Quilmes Atlético
+                                    Club, comandado por el conocido Chef Mono Cicero. Se ubica en Guido y General Paz.
+                                    De lunes a viernes al mediodía ofrece un famoso "Platazo del Día" super económico
+                                    que incluye bebida. Por las noches y fines de semana funciona con un amplio menú a
+                                    la carta donde destacan el cochinillo, rabas y carnes al horno Josper.</p>
+                                <div class="valoracion text-warning">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Top 3 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card tarjeta_restaurante h-100 border-0 shadow-lg">
+                            <div class="position-relative">
+                                <img src="img/Lo del viejo.jfif" class="card-img-top" alt="Restaurante"
+                                    style="height: 250px; object-fit: cover;">
+                                <div class="position-absolute top-0 start-0 m-3">
+                                    <span class="badge bg-info text-dark fs-5"><i class="fas fa-medal"></i> #3</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">Lo del Viejo</h4>
+                                <p class="text-muted">
+                                    <a href="https://www.google.com/maps/search/?api=1&query=Lo+del+Viejo,+Lavalle+274,+Quilmes,+Argentina"
+                                        target="_blank" rel="noopener noreferrer"
+                                        class="text-decoration-none text-muted">
+                                        <i class="fas fa-map-marker-alt"></i> Lavalle 274, B1878 Quilmes
+                                    </a>
+                                </p>
+                                <div class="mb-2">
+                                    <span class="badge bg-danger">Pizza</span>
+                                    <span class="badge bg-warning text-dark">Clásico</span>
+                                </div>
+                                <p class="card-text">Es un popular bodegón de barrio ubicado en la localidad de Quilmes,
+                                    en el sur del Gran Buenos Aires. Este restaurante es ampliamente reconocido en la
+                                    zona por ofrecer platos caseros, abundantes y de tamaño gigante orientados a
+                                    compartir..</p>
+                                <div class="valoracion text-warning">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Top 4 -->
+                    <div class="col-md-6 col-lg-6">
+                        <div class="card tarjeta_restaurante h-100 border-0 shadow-lg">
+                            <div class="position-relative">
+                                <img src="img/brunna.webp" class="card-img-top" alt="Restaurante"
+                                    style="height: 250px; object-fit: cover;">
+                                <div class="position-absolute top-0 start-0 m-3">
+                                    <span class="badge bg-secondary fs-5"><i class="fas fa-utensils"></i> #4</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">Brunna Ristorante</h4>
+                                <p class="text-muted">
+                                    <a href="https://www.google.com/maps/search/?api=1&query=Brunna+Ristorante,+Av.+Rivadavia+430,+Quilmes,+Argentina"
+                                        target="_blank" rel="noopener noreferrer"
+                                        class="text-decoration-none text-muted">
+                                        <i class="fas fa-map-marker-alt"></i> Av. Rivadavia 430, B1878 Quilmes
+                                    </a>
+                                </p>
+                                <div class="mb-2">
+                                    <span class="badge bg-dark">Sushi</span>
+                                    <span class="badge bg-info">Japonés</span>
+                                </div>
+                                <p class="card-text"> Es un destacado restaurante de cocina italiana y de autor ubicado
+                                    en la zona sur del Gran Buenos Aires. Su propuesta gastronómica combina platos
+                                    tradicionales con toques modernos en un ambiente sofisticado, ideal tanto para
+                                    salidas románticas como para reuniones de negocios o celebraciones especiales..</p>
+                                <div class="valoracion text-warning">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="far fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Top 5 -->
+                    <div class="col-md-6 col-lg-6">
+                        <div class="card tarjeta_restaurante h-100 border-0 shadow-lg">
+                            <div class="position-relative">
+                                <img src="img/torazo.webp" class="card-img-top" alt="Restaurante"
+                                    style="height: 250px; object-fit: cover;">
+                                <div class="position-absolute top-0 start-0 m-3">
+                                    <span class="badge bg-secondary fs-5"><i class="fas fa-utensils"></i> #5</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">Bodegón Torazo</h4>
+                                <p class="text-muted">
+                                    <a href="https://www.google.com/maps/search/?api=1&query=Bodegón+Torazo,+San+Martín+483,+Quilmes,+Argentina"
+                                        target="_blank" rel="noopener noreferrer"
+                                        class="text-decoration-none text-muted">
+                                        <i class="fas fa-map-marker-alt"></i> San Martín 483, B1878 Quilmes
+                                    </a>
+                                </p>
+                                <div class="mb-2">
+                                    <span class="badge bg-success">Parrilla Gourmet</span>
+                                    <span class="badge bg-warning text-dark">Pastas</span>
+                                </div>
+                                <p class="card-text">Es un reconocido restaurante de cocina tradicional argentina
+                                    ubicado en la localidad de Quilmes, Provincia de Buenos Aires. Este establecimiento
+                                    destaca por ofrecer porciones sumamente abundantes, sabores auténticos de estilo
+                                    casero y una cálida atención brindada de forma directa por sus propios dueños.</p>
+                                <div class="valoracion text-warning">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="pie_pagina py-4 bg-dark text-white text-center">
+                <div class="container">
+                    <p class="mb-0"> 2026 Quilmes, Buenos Aires — Mi Ciudad Natal.</p>
+                </div>
+            </footer>
+        </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Menú hamburguesa
+        const botonMenu = document.getElementById('botonMenu');
+        const barraLateral = document.getElementById('barraLateral');
+        const overlay = document.getElementById('overlay');
+
+        function abrirMenu() {
+            barraLateral.classList.add('mostrada');
+            overlay.classList.add('activo');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function cerrarMenu() {
+            barraLateral.classList.remove('mostrada');
+            overlay.classList.remove('activo');
+            document.body.style.overflow = '';
+        }
+
+        botonMenu.addEventListener('click', function () {
+            if (barraLateral.classList.contains('mostrada')) {
+                cerrarMenu();
+            } else {
+                abrirMenu();
+            }
+        });
+
+        overlay.addEventListener('click', cerrarMenu);
+
+        // Cerrar menú al hacer clic en un enlace (en móvil)
+        document.querySelectorAll('.barra_lateral .nav-link').forEach(function (enlace) {
+            enlace.addEventListener('click', function () {
+                if (window.innerWidth <= 991) {
+                    cerrarMenu();
+                }
+            });
+        });
+
+        // Cerrar menú con la tecla Escape
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape' && barraLateral.classList.contains('mostrada')) {
+                cerrarMenu();
+            }
+        });
+    </script>
+
+</body>
+
+</html>
